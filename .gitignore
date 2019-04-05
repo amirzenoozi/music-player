@@ -1,6 +1,7 @@
 node_modules
 .DS_Store
 build
+.idea
 npm-debug.log
 package-lock.json
 *.sublime-project
