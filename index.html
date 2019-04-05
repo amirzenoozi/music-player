@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title>Music Player</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="build/style.css">
+</head>
+<body>
+<div class="page page--full">
+    <div data-player class="player">
+        <audio controls>
+            <source src="test.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+        <div class="player-info">
+            <p class="player-title"></p>
+            <p class="player-artist"></p>
+            <span class="player-progress"><i></i></span>
+        </div>
+        <span class="player-shadow"></span>
+        <div class="player-custom">
+            <div class="player-controller">
+                <button type="button" class="player-forward" data-forward><svg class="icon icon--forward"><use xlink:href="./build/sprite.svg#forward"></use></svg></button>
+                <button type="button" class="player-toggle" data-toggle>
+                    <svg class="icon icon--play"><use xlink:href="./build/sprite.svg#play"></use></svg>
+                    <span class="icon icon--pause"></span>
+                </button>
+                <button type="button" class="player-backward" data-backward><svg class="icon icon--backward"><use xlink:href="./build/sprite.svg#backward"></use></svg></button>
+            </div>
+            <span class="player-cover" data-cover=""></span>
+        </div>
+    </div>
+    <a href="https://dribbble.com/shots/5785740-InVision-Studio-Music-Player" target="_blank" class="dribbble"></a>
+</div>
+<script src="build/build.js"></script>
+</body>
+</html>
